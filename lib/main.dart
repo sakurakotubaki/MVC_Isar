@@ -3,6 +3,7 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 import 'package:isar/isar.dart';
 import 'package:mvc_architecture/model/task.dart';
 import 'package:mvc_architecture/provider/isar.dart';
+import 'package:mvc_architecture/view/create_task_page.dart';
 import 'package:path_provider/path_provider.dart';
 
 void main() async {
@@ -39,7 +40,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // home: AddPage(isar: isar),
+      home: const CreateTaskPage(),
     );
   }
 }
